@@ -7,3 +7,7 @@ jobs:
     steps:
       - name: printa hello world
         run: echo "Hello world"
+      - name: verifica versao do node e npm
+        run: |
+          node -v
+          npm -v
