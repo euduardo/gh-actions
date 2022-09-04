@@ -1,3 +1,5 @@
+name: meu primeiro workflow
+
 on: 
   - push
 
@@ -7,6 +9,7 @@ jobs:
     steps:
       - name: printa hello world
         run: echo "Hello world"
+
       - name: verifica versao do node e npm
         run: |
           node -v
@@ -17,3 +20,9 @@ jobs:
         run: |
           print("hello from python")
           print(2 + 2)
+
+  outro-job:
+    runs-on: windows-2022
+    steps:
+      - name: powershell
+        run: Write-Host 'Hello powershell'
