@@ -11,3 +11,9 @@ jobs:
         run: |
           node -v
           npm -v
+
+      - name: roda script python
+        shell: python
+        run: |
+          print("hello from python")
+          print(2 + 2)
